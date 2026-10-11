@@ -6,16 +6,7 @@ from django.http import JsonResponse, HttpResponse
 import json
 import datetime
 
-config = {
-  "apiKey": "AIzaSyABZy-3mRT_t6IlqJU6b0bE6ui4A6Mee9E",
-  "authDomain": "documents-b43fb.firebaseapp.com",
-  "databaseURL": "https://documents-b43fb-default-rtdb.firebaseio.com",
-  "projectId": "documents-b43fb",
-  "storageBucket": "documents-b43fb.appspot.com",
-  "messagingSenderId": "863812795401",
-  "appId": "1:863812795401:web:2c8e58f2b1cc1c23ea8cd8",
-  "serviceAccount":"ecodoc/key.json"
-};
+config = ''
 
 firebase = pyrebase.initialize_app(config)
 service_account_key_path = "ecodoc/key.json"
