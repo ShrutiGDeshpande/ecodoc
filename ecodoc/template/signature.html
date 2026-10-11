@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Page</title>
+    <link rel="stylesheet" href="{% static 'css/signature.css' %}">
+</head>
+<body>
+    <input type="file" id="signatureInput" accept="image/*">
+    <button onclick="uploadSignature()">Upload Signature</button>
+    <button onclick="copySignature()">Copy Signature</button>
+    <div id="signatureImageContainer"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-storage.js"></script>
+    <script>
+      // Firebase configuration
+      config = {
+  "apiKey": "AIzaSyABZy-3mRT_t6IlqJU6b0bE6ui4A6Mee9E",
+  "authDomain": "documents-b43fb.firebaseapp.com",
+  "databaseURL": "https://documents-b43fb-default-rtdb.firebaseio.com",
+  "projectId": "documents-b43fb",
+  "storageBucket": "documents-b43fb.appspot.com",
+  "messagingSenderId": "863812795401",
+  "appId": "1:863812795401:web:2c8e58f2b1cc1c23ea8cd8",
+  "serviceAccount":"ecodoc/key.json"
+};
+
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const storage = firebase.storage();
+
+function uploadSignature() {
+    const fileInput = document.getElementById("signatureInput");
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Please select a file.");
+        return;
+    }
+
+    const signatureRef = storage.ref().child('signatures/' + file.name);
+
+    signatureRef.put(file).then(function(snapshot) {
+        console.log('Uploaded a file!');
+        displaySignature(signatureRef);
+    }).catch(function(error) {
+        console.error(error);
+    });
+}
+
+function copySignature() {
+    const signatureImage = document.getElementById("signatureImage");
+    const imageUrl = signatureImage.src;
+
+    fetch(imageUrl)
+    .then(res => res.blob())
+    .then(blob => {
+        const item = new ClipboardItem({ 'image/png': blob });
+        navigator.clipboard.write([item]);
+    });
+}
+
+function displaySignature(signatureRef) {
+    signatureRef.getDownloadURL().then(function(url) {
+        const container = document.getElementById("signatureImageContainer");
+        container.innerHTML = ''; // Clear previous image(s)
+
+        const img = document.createElement("img");
+        img.id = "signatureImage";
+        img.src = url;
+        container.appendChild(img);
+    }).catch(function(error) {
+        console.error(error);
+    });
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+#signatureImageContainer {
+    margin-top: 20px;
+}
+
+#signatureImageContainer img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+}

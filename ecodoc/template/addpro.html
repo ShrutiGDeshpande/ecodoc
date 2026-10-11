@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/addemp.css' %}">
+  </head>
+  <body>
+<form method="post" action="{% url 'add_pro' %}">
+    {% csrf_token %}
+    
+    <label for="ID">ID:</label>
+    <input type="text" name="ID" required>
+    <br>
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
+    <br>
+    <br>
+    <label for="password">Password</label>
+    <input type="text" name="password" required>
+    <br>
+    <br>
+    <label for="link">Folder</label>
+    <input type="url" name="link" required>
+    <br>
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

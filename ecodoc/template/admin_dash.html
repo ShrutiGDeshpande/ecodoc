@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="image-box">
+                <img src="{% static 'images/user.svg' %}" alt="User Image">
+            </div>
+            <h1 class="header-title">User Dashboard</h1>
+            <nav class="navigation">
+                <a href="{% url 'logout' %}">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <div class="dashboard">
+        <div class="dashboard-content">
+            <div class="button-container">
+                <a href="{% url 'info' %}" class="dashboard-button" style="font-size: 40px;">Profile</a>
+                <a href="{% url 'todo' %}" class="dashboard-button" style="font-size: 40px;">To Do</a>
+                <a href="{% url 'add_emp' %}" class="dashboard-button" style="font-size: 40px;">Add Employee</a>
+                <a href="{% url 'add_pro' %}" class="dashboard-button" style="font-size: 40px;">Add Project</a>
+                <a href="{% url 'view_emp' %}" class="dashboard-button" style="font-size: 40px;">View Employee</a>
+                <a href="{% url 'view_pro' %}" class="dashboard-button" style="font-size: 40px;">View Projects</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

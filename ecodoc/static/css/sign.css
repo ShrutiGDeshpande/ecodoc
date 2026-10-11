@@ -1,0 +1,199 @@
+.signature {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .signature .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .signature .overlap {
+    height: 1024px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgb(10, 147, 150) 5.73%, rgba(10, 147, 150, 0) 100%);
+    position: absolute;
+    width: 369px;
+  }
+  
+  .signature .text-wrapper {
+    position: absolute;
+    width: 218px;
+    top: 196px;
+    left: 75px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .signature .image {
+    position: absolute;
+    width: 127px;
+    height: 151px;
+    top: 36px;
+    left: 106px;
+    object-fit: cover;
+  }
+  
+  .signature .overlap-group {
+    height: 174px;
+    top: 121px;
+    left: 479px;
+    background-color: #0c9497;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .signature .rectangle {
+    position: absolute;
+    width: 369px;
+    height: 174px;
+    top: 0;
+    left: 0;
+    background-color: #0c9497;
+    border-radius: 25px;
+  }
+  
+  .signature .your-digital {
+    position: absolute;
+    width: 261px;
+    top: 65px;
+    left: 89px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .signature .div-wrapper {
+    height: 174px;
+    top: 121px;
+    left: 958px;
+    background-color: #0c9497;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .signature .text-wrapper-2 {
+    position: absolute;
+    width: 234px;
+    top: 67px;
+    left: 108px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .signature .overlap-2 {
+    height: 174px;
+    top: 614px;
+    left: 964px;
+    background-color: #0c9497;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .signature .text-wrapper-3 {
+    position: absolute;
+    width: 218px;
+    top: 40px;
+    left: 69px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .signature .overlap-3 {
+    height: 174px;
+    top: 620px;
+    left: 494px;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .signature .text-wrapper-4 {
+    position: absolute;
+    width: 261px;
+    top: 51px;
+    left: 39px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .signature .overlap-4 {
+    height: 77px;
+    top: 338px;
+    left: 479px;
+    background-color: #0c949773;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .signature .text-wrapper-5 {
+    position: absolute;
+    width: 300px;
+    top: 22px;
+    left: 69px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .signature .overlap-5 {
+    height: 77px;
+    top: 338px;
+    left: 964px;
+    background-color: #0c949773;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .signature .text-wrapper-6 {
+    position: absolute;
+    width: 268px;
+    top: 25px;
+    left: 101px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  

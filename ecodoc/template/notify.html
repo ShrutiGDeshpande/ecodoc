@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="{% static 'css/notify.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Notifications</h1>
+        <h2>Tasks Due Today</h2>
+        <ul>
+            {% for task in today_tasks %}
+            <li class="task-box today" id="{{ task.id }}">
+                <div class="task-content">
+                    <div class="project-name">{{ task.project_name }}</div>
+                    <div class="task-name">{{ task.name }}</div>
+                    <div class="task-description">{{ task.description }}</div>
+                    <div class="task-deadline">Deadline: {{ task.deadline }}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <h2>Past Due Tasks</h2>
+        <ul>
+            {% for task in past_due_tasks %}
+            <li class="task-box past-due" id="{{ task.id }}">
+                <div class="task-content">
+                    <div class="task-name">{{ task.name }}</div>
+                    <div class="task-description">{{ task.description }}</div>
+                    <div class="task-deadline">Deadline: {{ task.deadline }}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <h2>Tasks Due in 2 Days</h2>
+        <ul>
+            {% for task in two_days_tasks %}
+            <li class="task-box two-days" id="{{ task.id }}">
+                <div class="task-content">
+                    <div class="task-name">{{ task.name }}</div>
+                    <div class="task-description">{{ task.description }}</div>
+                    <div class="task-deadline">Deadline: {{ task.deadline }}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

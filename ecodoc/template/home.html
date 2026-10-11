@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Office Website</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="{% static 'images/doc.jpg' %}" alt="Logo">
+      </div>
+      <h1 class="title">Ecodoc</h1>
+    </header>
+
+    <section class="section about-us">
+      <div class="overlap">
+        <p class="ecodoc-our-paperless">
+          <span class="text-wrapper">EcoDoc<br /></span> <span class="span">Our Paperless Office</span>
+        </p>
+      </div>
+      <p class="about-us-we-provide">
+        <span class="text-wrapper-2">About us<br /></span>
+        <span class="text-wrapper-3">We provide a modern approach to digitizing and streamlining document management processes within organizations. We aim to eliminate the use of paper by implementing electronic document storage, retrieval, and collaboration systems.</span>
+      </p>
+      <div class="overlap-group">
+        <div class="text-wrapper-4">
+          <button style="width: 500px; height: 80px;"><a href="{% url 'login_view' %}" style="text-decoration: none; color: white; font-size: large;">Start Working</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-content">
+        <div class="question">
+          <h3>Question 1?</h3>
+          <p>Answer to question 1.</p>
+        </div>
+        <div class="question">
+          <h3>Question 2?</h3>
+          <p>Answer to question 2.</p>
+        </div>
+        <!-- Add more questions and answers here -->
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #2c3e50; /* Deep blue */
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%; /* Ensure header takes full width */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limit header width to 1200px */
+    margin: 0 auto; /* Center header horizontally */
+}
+
+.header-title {
+    margin: 0;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Dashboard container styles */
+.dashboard {
+    padding-top: 20px; /* Adjusted padding */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Dashboard content styles */
+.dashboard-content {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto; /* Center content horizontally */
+}
+
+/* Button container styles */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Dashboard button styles */
+.dashboard-button {
+    padding: 20px;
+    margin: 10px;
+    background-color: #3498db; /* Medium blue */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem; /* Increased font size */
+    width: calc(50% - 40px); /* Adjusted width */
+    height: 120px; /* Adjust the height as needed */
+    display: inline-block; /* Ensure buttons stay inline */
+    line-height: 80px; /* Adjusted line-height */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.dashboard-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* CSS for the image box */
+.image-box {
+    width: 50px;
+    height: 50px; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="image-box">
+                <img src="{% static 'images/pro.png' %}" alt="User Image">
+            </div>
+            <h1 class="header-title">Project Page</h1>
+            <nav class="navigation">
+                <a href="{% url 'logoutp' %}">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <div class="dashboard">
+        <div class="dashboard-content">
+            <div class="button-container">
+                <a href="{{google_drive_link}}" class="dashboard-button" style="font-size: 40px;" target="_blank"> Documents</a>
+                <a href="{% url 'kanban' %}" class="dashboard-button" style="font-size: 40px;"> Kanban Board</a>
+                <a href="{% url 'collab' %}" class="dashboard-button" style="font-size: 40px;">Collaboration </a>
+                <a href="{% url 'dir' %}" class="dashboard-button" style="font-size: 40px;"> Employee Directory</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

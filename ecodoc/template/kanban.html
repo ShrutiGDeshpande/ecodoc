@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/kanban.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="kanban-board">
+        <div class="column">
+            <h2>To Do</h2>
+            <div class="tasks" id="to-do" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- Tasks will be added dynamically here -->
+            </div>
+        </div>
+        <div class="column">
+            <h2>In inprogress</h2>
+            <div class="tasks" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- Tasks will be added dynamically here -->
+            </div>
+        </div>
+        <div class="column">
+            <h2>Review</h2>
+            <div class="tasks" id="review" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- Tasks will be added dynamically here -->
+            </div>
+        </div>
+        <div class="column">
+            <h2>Done</h2>
+            <div class="tasks" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- Tasks will be added dynamically here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="add-task-button" onclick="openModal()">Add Task</div>
+
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Add Task</h3>
+            <input type="text" id="task-name" placeholder="Task name">
+            <br>
+            <input type="text" id="task-description" placeholder="Task description">
+            <br>
+            <input type="date" id="task-deadline">
+            <button onclick="addTask()">Add</button>
+        </div>
+    </div>
+
+    <script src="{% static 'js/kanban.js' %}"></script>
+</body>
+</html>

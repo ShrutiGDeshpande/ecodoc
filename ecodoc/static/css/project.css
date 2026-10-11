@@ -1,0 +1,221 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #2c3e50; /* Deep blue */
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .header-title {
+    margin: 0;
+  }
+  
+  .navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  /* Project home page styles */
+  .project-home-page {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .project-home-page .div {
+    background-color: #fff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .project-home-page .overlap {
+    height: 1024px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgb(10, 147, 150) 5.73%, rgba(10, 147, 150, 0) 100%);
+    position: absolute;
+    width: 369px;
+  }
+  
+  .project-home-page .text-wrapper {
+    position: absolute;
+    width: 218px;
+    top: 196px;
+    left: 75px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .project-home-page .image {
+    position: absolute;
+    width: 100px;
+    height: 108px;
+    top: 67px;
+    left: 122px;
+    object-fit: cover;
+  }
+  
+  .project-home-page .overlap-group {
+    height: 174px;
+    top: 121px;
+    left: 479px;
+    background-color: #0c9497;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .project-home-page .text-wrapper-2 {
+    position: absolute;
+    width: 261px;
+    top: 65px;
+    left: 89px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .project-home-page .div-wrapper {
+    height: 174px;
+    top: 121px;
+    left: 958px;
+    background-color: #0c9497;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .project-home-page .div-wrapper:hover {
+    background-color: #087e80;
+  }
+  
+  .project-home-page .text-wrapper-3 {
+    position: absolute;
+    width: 234px;
+    top: 67px;
+    left: 108px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .project-home-page .text-wrapper-3 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .project-home-page .overlap-2 {
+    height: 174px;
+    top: 362px;
+    left: 958px;
+    background-color: #0c9497;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .project-home-page .overlap-2:hover {
+    background-color: #087e80;
+  }
+  
+  .project-home-page .overlap-3 .rectangle:hover {
+    background-color: #087e80;
+  }
+  
+  .project-home-page .overlap-3 .rectangle a:hover {
+    background-color: #087e80;
+  }
+  
+  .project-home-page .overlap-group:hover {
+    background-color: #087e80;
+  }
+  
+  .project-home-page .text-wrapper-4 {
+    position: absolute;
+    width: 218px;
+    top: 33px;
+    left: 76px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .project-home-page .overlap-3 {
+    height: 174px;
+    top: 362px;
+    left: 479px;
+    border-radius: 25px;
+    position: absolute;
+    width: 369px;
+  }
+  
+  .project-home-page .rectangle {
+    position: absolute;
+    width: 369px;
+    height: 174px;
+    top: 0;
+    left: 0;
+    background-color: #0c9497;
+    border-radius: 25px;
+  }
+  
+  .project-home-page .text-wrapper-5 {
+    position: absolute;
+    width: 261px;
+    top: 57px;
+    left: 54px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .project-home-page .text-wrapper-5 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+    

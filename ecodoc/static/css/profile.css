@@ -1,0 +1,105 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  background-color: #2c3e50; /* Deep blue */
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Dashboard container styles */
+.dashboard {
+  padding-top: 100px;
+  padding-left: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Dashboard content styles */
+.dashboard-content {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center button container horizontally */
+  align-items: center; /* Center button container vertically */
+  margin-top: 20px;
+}
+
+/* Dashboard button styles */
+.dashboard-button {
+  padding: 20px;
+  margin: 10px;
+  background-color: #3498db; /* Medium blue */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 1.5rem; /* Increased font size */
+  width: calc(50% - 20px);
+  height: 120px; /* Adjust the height as needed */
+  text-align: center; /* Center button text */
+  line-height: 90px;
+}
+
+.dashboard-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* CSS for the image box */
+.image-box {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; /* Optional margin */
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+}

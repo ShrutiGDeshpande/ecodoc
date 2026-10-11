@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="image-box">
+                <img src="{% static 'images/user.svg' %}" alt="User Image">
+            </div>
+            <h1 class="header-title">User Dashboard</h1>
+            <nav class="navigation">
+                <a href="{% url 'logout' %}">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <div class="dashboard">
+        <div class="dashboard-content">
+            <div class="button-container">
+                <a href="{% url 'info' %}" class="dashboard-button" style="font-size: 40px;"><i class="fas fa-user"></i> Personal Info</a>
+                <a href="{{ white_board_link1 }}" class="dashboard-button" style="font-size: 40px;" target="_blank"><i class="fas fa-pen-square"></i> My Space</a>
+                <a href="{% url 'todo' %}" class="dashboard-button" style="font-size: 40px;"><i class="fas fa-sticky-note"></i> To Do</a>
+                <a href="{% url 'notify' %}" class="dashboard-button" style="font-size: 40px;"><i class="fas fa-bell"></i> Notifications</a>
+
+                <a href="{% url 'project_login' %}" class="dashboard-button" style="font-size: 40px;"><i class="fas fa-project-diagram"></i> Project Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

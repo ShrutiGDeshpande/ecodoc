@@ -1,0 +1,188 @@
+.ADMIN-CREDENTIALS {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.ADMIN-CREDENTIALS .div {
+    background-color: #ffffff;
+    width: 1381px;
+    height: 832px;
+    position: relative;
+}
+
+.ADMIN-CREDENTIALS .rectangle {
+    width: 369px;
+    height: 1024px;
+    top: -192px;
+    background: linear-gradient(180deg, rgb(10, 147, 150) 5.73%, rgba(10, 147, 150, 0) 100%);
+    position: absolute;
+    left: 0;
+}
+
+.ADMIN-CREDENTIALS .overlap-group {
+    position: absolute;
+    width: 559px;
+    height: 89px;
+    top: 319px;
+    left: 622px;
+}
+
+.ADMIN-CREDENTIALS .overlap-group input{
+    top: 309px;
+    left: 622px;
+    height: 40px;
+}
+
+.ADMIN-CREDENTIALS .text-wrapper {
+    top: 24px;
+    left: 25px;
+    position: absolute;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 40;
+    color: #000000;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-size: 30px;
+}
+
+.ADMIN-CREDENTIALS .overlap {
+    position: absolute;
+    width: 559px;
+    height: 115px;
+    top: 166px;
+    left: 623px;
+}
+
+.ADMIN-CREDENTIALS .rectangle-2 {
+    width: 559px;
+    height: 89px;
+    top: 26px; 
+    position: absolute;
+    left: 0;
+}
+
+.ADMIN-CREDENTIALS .rectangle-3 {
+    width: 415px;
+    height: 89px;
+    top: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.ADMIN-CREDENTIALS .text-wrapper-2 {
+    position: absolute;
+    top: 43px;
+    left: 30px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ADMIN-CREDENTIALS .overlap-2 {
+    position: absolute;
+    width: 559px;
+    height: 93px;
+    top: 454px;
+    left: 623px;
+}
+
+.ADMIN-CREDENTIALS .frame {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 29px;
+    left: 124px;
+}
+
+.ADMIN-CREDENTIALS .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ADMIN-CREDENTIALS .rectangle-4 {
+    width: 559px;
+    height: 89px;
+    top: 0;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #00000040;
+    position: absolute;
+    left: 0;
+}
+
+.ADMIN-CREDENTIALS .text-wrapper-4 {
+    width: 325px;
+    top: 33px;
+    left: 42px;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ADMIN-CREDENTIALS .text-wrapper-5 {
+    position: absolute;
+    top: 48px;
+    left: 616px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ADMIN-CREDENTIALS .overlap-3 {
+    position: absolute;
+    width: 415px;
+    height: 89px;
+    top: 610px;
+    left: 699px;
+    border-radius: 20px;
+}
+
+.ADMIN-CREDENTIALS .rectangle-5 {
+    width: 415px;
+    height: 89px;
+    top: 0;
+    background-color: #0a9396;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+}
+
+.ADMIN-CREDENTIALS .text-wrapper-6 {
+    position: absolute;
+    width: 277px;
+    top: 17px;
+    left: 120px;
+    font-family: "Marcellus-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}

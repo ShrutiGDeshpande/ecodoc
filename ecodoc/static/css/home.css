@@ -1,0 +1,108 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up base font styles */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  background-color: #2c3e50; /* Deep blue */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Container styles */
+.container {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us section styles */
+.about-us {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #dbe9f9; /* Light blue */
+  border-radius: 10px;
+  color: #333; /* Dark gray */
+}
+
+.ecodoc-our-paperless {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-us-we-provide {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Button styles */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db; /* Medium blue */
+  color: white;
+}
+
+/* FAQ section styles */
+.faq-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #a8d0e6; /* Soft blue */
+  border-radius: 10px;
+  color: #333; /* Dark gray */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333; /* Dark gray */
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
